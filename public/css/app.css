@@ -28,6 +28,8 @@ height: 90vh;
 
 }
 .textSide{
+    border-radius: 5px;
+    padding-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +37,7 @@ height: 90vh;
     align-items: center;
     width: 100%;
     gap: 49px;
+
 }
 .btnTxt{
     display: flex;
@@ -54,7 +57,7 @@ border: 1px solid silver;
     flex-direction: column;
     align-items: center;
     height: 45%;
-    gap: 4%;
+    gap: 6%;
 }
 header{
     width: 100%;
