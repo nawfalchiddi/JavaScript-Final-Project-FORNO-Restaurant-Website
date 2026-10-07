@@ -13,6 +13,7 @@ let searchValue = e.target.value.toLowerCase().trim();
 
         if (ziel.includes(searchValue)) {
             card.style.display = "block";
+            pizzaAddArray.push(card)
         }else{
             card.style.display = "none"
         }
@@ -81,3 +82,16 @@ e.preventDefault();
 
 })
 })
+
+let htMl = document.querySelector('html');
+let btnMyPayment = document.querySelector('.btnPaier');
+const pizzaAddArray = [];
+
+btnMyPayment.addEventListener('click',(e) => {
+e.preventDefault();
+
+let sidediv = document.createElement('div');
+sidediv.classList('sideLeft');
+
+
+});
