@@ -121,6 +121,9 @@ justify-content: space-around;
 .textConta1{
     width: 30%;
 }
+.linetxt{
+    
+}
 .smline{
     width: 10%;
     height: 2px;
@@ -625,10 +628,9 @@ flex-direction: column;
 }
 .origineMargha{
     position: relative;
-width: 60%;
+width: 50%;
 left: 45%;
-bottom: 65vh;
-font-size: xx-small;
+bottom: 62vh;
 }
 /* the second section */
 .conta2{
@@ -686,7 +688,7 @@ width: 44%;
 }
 .chefs{
    width: 90%;
-    height: 60vh;
+    height: 50vh;
 }
 
 .txtBelowchefs{
