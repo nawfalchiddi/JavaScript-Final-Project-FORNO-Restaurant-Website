@@ -58,4 +58,13 @@ frm.addEventListener('submit',(e)=>{
     }
 })
 
-let 
+// let locationcard = document.querySelectorAll('.numberLocation');
+// locationcard.forEach((contaLoc) => {
+    
+//     contaLoc.addEventListener('click',()=>{
+        
+//         let pLocationName = document.querySelectorAll('.ploction');
+        
+         
+//         })
+//     })

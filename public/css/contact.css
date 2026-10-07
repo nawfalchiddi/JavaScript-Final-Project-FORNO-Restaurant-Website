@@ -146,6 +146,7 @@ color: white;
     cursor: pointer;
     background-color: rgb(241, 85, 85);
     color: grey;
+    border-radius: 5%;
 }
 
 form{

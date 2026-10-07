@@ -242,6 +242,7 @@ justify-content: space-around;
     justify-content: space-around;
 }
 .imageHero{
+    margin-top: 3%;
     width: 90%;
     height: 75vh;
 }
@@ -250,7 +251,6 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 45%;
-    
 }
 .cyrcleInPizza{
     border-radius: 90%;
