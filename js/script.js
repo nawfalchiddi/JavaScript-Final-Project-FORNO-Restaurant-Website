@@ -72,7 +72,7 @@ e.preventDefault()
 
 let btnpayer = document.querySelector('.btnPaier');
 let addbtn = document.querySelectorAll('.btnAjouter');
-
+let txtshldbehidde = document.querySelector('.lastdivSide');
 addbtn.forEach((btn) => {
 btn.addEventListener('click',(e) =>{
 e.preventDefault();
@@ -96,6 +96,11 @@ let pizzaimg = theParent.querySelector('.imageM').src
 let divajouter = document.createElement('div');
 divajouter.classList.add('thedivside');
 
+let total = 0
+for (let i = 0; i < theParent.length; i++) {
+    total += theParent[i].pizzaPrice
+    
+}
  divajouter.innerHTML = `
       <div>
         <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
@@ -104,9 +109,11 @@ divajouter.classList.add('thedivside');
           <p style="margin: 0; color: red; font-weight: bold; font-size: 13px;">${pizzaPrice} MAD</p>
         </div>
       </div>
+       <div>${total}</div>
     `;
 
     sideC.appendChild(divajouter)
+    txtshldbehidde.style.display = "none"
 })
 
 })
