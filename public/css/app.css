@@ -628,8 +628,10 @@ html{
 }
 
 .thedivside{
+    padding-bottom: 2vh;
+    padding-top: 2vh;
     border-radius: 10px;
-    padding-left: 1%;
+    padding-left: 3%;
     display: flex;
     justify-content: center;
  align-items: center;
@@ -646,7 +648,10 @@ html{
     padding-left: 2%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
     width: 90%;
+    height: 7vh;
 }
 .btnBuY{
     margin-top: 3%;
