@@ -37,6 +37,9 @@ justify-content: space-between;
     width: 100%;
     gap: 49px;
 }
+.btnTxt{
+    
+}
 .xbtn{
 border-radius: 50%;
 padding: 3%;
