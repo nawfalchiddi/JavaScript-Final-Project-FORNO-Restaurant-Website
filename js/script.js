@@ -70,12 +70,12 @@ e.preventDefault()
 })
 
 
+let sideC = document.querySelector('.sideleft');
 let btnpayer = document.querySelector('.btnPaier');
 let addbtn = document.querySelectorAll('.btnAjouter');
 let txtshldbehidde = document.querySelector('.lastdivSide');
 let total = 0
 let totalDiv = document.createElement('div');
-
 
 addbtn.forEach((btn) => {
     btn.addEventListener('click',(e) =>{
@@ -117,13 +117,14 @@ divajouter.classList.add('thedivside');
     </div>
     
     `;
+    sideC.appendChild(totalDiv)
+    sideC.insertBefore(divajouter , totalDiv)
+    // sideC.insertBefore(totalDiv);
     
     totalDiv.innerHTML = `
     <span> Total :</span>
     <span> ${total} MAD</span>`
     
-    sideC.appendChild(divajouter)
-    sideC.appendChild(totalDiv);
     txtshldbehidde.style.display = "none"
 })
 
@@ -132,7 +133,6 @@ divajouter.classList.add('thedivside');
 
 
 let theMain = document.querySelector('main');
-let sideC = document.querySelector('.sideleft');
 let xSquare = document.querySelector('.xbtn')
 const pizzaAddArray = [];
 
