@@ -61,6 +61,8 @@ let btnchoi = document.querySelector('.btnChois');
 
 btnchoi.addEventListener('click',(e)=>{
 e.preventDefault()
+  document.querySelector('main').style.filter = "blur(0px)"; 
+
     containerCards.scrollIntoView({
         behavior : "smooth",
         block : "start"
@@ -96,7 +98,7 @@ e.preventDefault();
 
 sideC.style.display = "block"
 
-
+ document.querySelector('main').style.filter = "blur(8px)"; 
 
 
 });
@@ -105,7 +107,7 @@ xSquare.addEventListener('click',(e)=>{
 
 sideC.style.display = "none"
 
-
+  document.querySelector('main').style.filter = "blur(0px)"; 
 
 })
 
@@ -120,6 +122,7 @@ aTagcards.addEventListener('click',(e) => {
     })
 
 })
+
 let btnChois2 =document.querySelector('.btnChois1');
 
 btnChois2.addEventListener('click',(e) => {
