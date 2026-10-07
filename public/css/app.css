@@ -595,7 +595,9 @@ justify-content: space-around;
 align-items: center;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 

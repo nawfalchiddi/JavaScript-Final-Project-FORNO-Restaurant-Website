@@ -114,5 +114,9 @@ let aTagcards =document.querySelector('.smoothCards');
 aTagcards.addEventListener('click',(e) => {
     e.preventDefault()
 
-    
+    containerCards.scrollIntoView({
+        behavior : "smooth",
+        block : "start"
+    })
+
 })
