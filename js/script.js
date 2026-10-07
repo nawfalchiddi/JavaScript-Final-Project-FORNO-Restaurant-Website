@@ -83,6 +83,9 @@ e.preventDefault();
   countAdd.textContent = countvarbl + 1
 
 })
+
+addbtn.style.color = "green";
+
 })
 
 

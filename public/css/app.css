@@ -26,8 +26,8 @@ align-items: center;
 width: 30%;
 height: 90vh;
    
-  position: absolute;
-  top: 6%;
+  position: fixed;
+  top: 7%;
   right: 0; 
   width: 350px;
   height: 100vh; 
@@ -74,6 +74,7 @@ border: 1px solid silver;
     gap: 6%;
 }
 header{
+    background-color: rgb(245, 241, 233);
     z-index: 9999;
     position: fixed;
     width: 100%;
