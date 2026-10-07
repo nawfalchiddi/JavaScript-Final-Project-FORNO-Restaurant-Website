@@ -76,10 +76,9 @@ let txtshldbehidde = document.querySelector('.lastdivSide');
 let total = 0
 let totalDiv = document.createElement('div');
 
-sideC.appendChild(totalDiv);
 
 addbtn.forEach((btn) => {
-btn.addEventListener('click',(e) =>{
+    btn.addEventListener('click',(e) =>{
 e.preventDefault();
 let countAdd =  btnpayer.querySelector('span') 
 
@@ -105,19 +104,24 @@ divajouter.classList.add('thedivside');
 
 // let total = 0
 // for (let i = 0; i < cardsPizza.length; i++) {
-//     total += Number(cardsPizza[i].pizzaPrice) 
+    //     total += Number(cardsPizza[i].pizzaPrice) 
     
-// }
- divajouter.innerHTML = `
-      <div>
-        <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
-        <div style="flex-grow: 1;">
-          <h4 style="margin: 0; font-size: 14px;">${pizzaName}</h4>
-          <p style="margin: 0; color: red; font-weight: bold; font-size: 13px;">${pizzaPrice} MAD</p>
-        </div>
-      </div>
-       <div>${total}</div>
+    // }
+    divajouter.innerHTML = `
+    <div>
+    <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
+    <div style="flex-grow: 1;">
+    <h4 style="margin: 0; font-size: 14px;">${pizzaName}</h4>
+    <p style="margin: 0; color: red; font-weight: bold; font-size: 13px;">${pizzaPricenum} MAD</p>
+    </div>
+    </div>
+    
     `;
+    
+    sideC.appendChild(totalDiv);
+    totalDiv.innerHTML = `
+    <span> Total :</span>
+    <span> ${total} MAD</span>`
 
     sideC.appendChild(divajouter)
     txtshldbehidde.style.display = "none"
