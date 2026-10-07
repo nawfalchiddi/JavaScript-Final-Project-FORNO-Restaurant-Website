@@ -880,6 +880,19 @@ flex-direction: column;
     align-items: center;
     padding-top: 1%;
 }
+.cyrcleInPizza{
+    position: relative;
+    bottom: 16vh;
+    margin-right: 290px;
+    padding: 2%;
+    width: 17%;
+}
+.origineMargha{
+    position: relative;
+width: 30%;
+left: 35%;
+bottom: 83vh;
+}
 
 .numberTxt{
     width: 60%;
