@@ -112,18 +112,18 @@ divajouter.classList.add('thedivside');
     <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
     <div style="flex-grow: 1;">
     <h4 style="margin: 0; font-size: 14px;">${pizzaName}</h4>
-    <p style="margin: 0; color: red; font-weight: bold; font-size: 13px;">${pizzaPricenum} MAD</p>
+    <p style="margin: 0; color: red; font-weight: bold; font-size: 13px;">${pizzaPriceText} MAD</p>
     </div>
     </div>
     
     `;
     
-    sideC.appendChild(totalDiv);
     totalDiv.innerHTML = `
     <span> Total :</span>
     <span> ${total} MAD</span>`
-
+    
     sideC.appendChild(divajouter)
+    sideC.appendChild(totalDiv);
     txtshldbehidde.style.display = "none"
 })
 
