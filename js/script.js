@@ -59,11 +59,11 @@ typePiza.addEventListener('change',()=>{
 
 let btnchoi = document.querySelector('.btnChois');
 
-btnchoi.addEventListener('click',()=>{
-
+btnchoi.addEventListener('click',(e)=>{
+e.preventDefault()
     containerCards.scrollIntoView({
-        behavior : 'smooth',
-        block : 'start'
+        behavior : "smooth",
+        block : "start"
     });
 })
 
@@ -112,6 +112,17 @@ sideC.style.display = "none"
 let aTagcards =document.querySelector('.smoothCards');
 
 aTagcards.addEventListener('click',(e) => {
+    e.preventDefault()
+
+    containerCards.scrollIntoView({
+        behavior : "smooth",
+        block : "start"
+    })
+
+})
+let btnChois2 =document.querySelector('.btnChois1');
+
+btnChois2.addEventListener('click',(e) => {
     e.preventDefault()
 
     containerCards.scrollIntoView({

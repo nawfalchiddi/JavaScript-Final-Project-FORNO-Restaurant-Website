@@ -208,6 +208,23 @@ justify-content: space-around;
      transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(255, 71, 87, 0.3);
 }
+.btnChois1{
+    height: 5vh;
+    width: 45%;
+    text-align: center;
+    background-color: rgb(216, 58, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btnChois1:hover{
+    cursor: pointer;
+    border: 1px solid red;
+    background-color: aliceblue;
+    color: red;
+     transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(255, 71, 87, 0.3);
+}
 .count2{
     border-radius: 50px;
     border: 1px solid lightgrey;
