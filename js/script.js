@@ -78,7 +78,7 @@ let total = 0
 let totalDiv = document.createElement('div');
 totalDiv.classList.add('totaldivside')
 let buy = document.createElement('button');
-buy.classList.add('btnBuy');
+buy.classList.add('btnBuY');
 
 addbtn.forEach((btn) => {
     btn.addEventListener('click',(e) =>{
@@ -121,7 +121,7 @@ divajouter.classList.add('thedivside');
     
     `;
     sideC.appendChild(buy)
-    sideC.appendChild(totalDiv)
+    sideC.insertBefore(totalDiv,buy)
     sideC.insertBefore(divajouter , totalDiv)
     // sideC.insertBefore(totalDiv);
     
@@ -129,7 +129,7 @@ divajouter.classList.add('thedivside');
     <span> Total :</span>
     <span> ${total} MAD</span>
     `
-    buy.innerHTML = `<button class="btnBuy">Demande</button>`
+    buy.innerHTML = `<div class="btnBuY"><button class="btnBuy">Demande</button></div>`
     
     txtshldbehidde.style.display = "none"
 })

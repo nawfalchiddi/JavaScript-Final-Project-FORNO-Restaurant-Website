@@ -648,8 +648,19 @@ html{
     justify-content: center;
     width: 90%;
 }
+.btnBuY{
+    margin-top: 3%;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btnBuy{
-    width: 50%;
+    cursor: pointer;
+    height: 5vh;
+    width: 40%;
     background-color: #ff4757;
     color: white;
     border-radius: 5px;
