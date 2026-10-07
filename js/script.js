@@ -90,9 +90,24 @@ btn.innerHTML = `<p><i class="bi bi-check2"></i> ajouter</p> `
 let theParent = btn.closest('.cards');
 
 let pizzaName = theParent.querySelector('h2 strong').textContent;
-let pizzaPrice = theParent.querySelector('.priceAjouter h2').childNodes[0]
-})
+let pizzaPrice = theParent.querySelector('.priceAjouter h2').childNodes[0].textContent.trim()
+let pizzaimg = theParent.querySelector('.imageM').src
 
+let divajouter = document.createElement('div');
+// divajouter.classList('thedivside');
+
+ divajouter.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+        <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
+        <div style="flex-grow: 1;">
+          <h4 style="margin: 0; font-size: 14px;">${pizzaName}</h4>
+          <p style="margin: 0; color: red; font-weight: bold; font-size: 13px;">${pizzaPrice} MAD</p>
+        </div>
+      </div>
+    `;
+
+    sideC.appendChild(divajouter)
+})
 
 })
 
