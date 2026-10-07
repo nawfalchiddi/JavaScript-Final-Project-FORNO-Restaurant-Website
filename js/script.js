@@ -74,7 +74,9 @@ let btnpayer = document.querySelector('.btnPaier');
 let addbtn = document.querySelectorAll('.btnAjouter');
 let txtshldbehidde = document.querySelector('.lastdivSide');
 let total = 0
+let totalDiv = document.createElement('div');
 
+sideC.appendChild(totalDiv);
 addbtn.forEach((btn) => {
 btn.addEventListener('click',(e) =>{
 e.preventDefault();
