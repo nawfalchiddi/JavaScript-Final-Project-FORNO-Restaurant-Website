@@ -176,27 +176,26 @@ justify-content: space-around;
     background-color: rgb(216, 58, 38);
     border: none;
     width: 17%;
-    height: 14vh;
     gap: 6%;
      position: relative;
     bottom: 20vh;
     left: 7%;
-     /* box-shadow: inset 0 0 0 4px white; */
-    /* transform: rotate(-20deg); */
+     box-shadow: inset 0 0 0 4px white; 
+     transform: rotate(-20deg);
 }
 .origineMargha{
     position: relative;
     bottom: 80vh;
     left: 65%;
-width: 32%;
-background-color: whitesmoke;
-color: rgb(148, 148, 148);
-border: none;
-border-radius: 5px;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 4vh;
+    width: 32%;
+    background-color: whitesmoke;
+    color: rgb(148, 148, 148);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
 }
 /* the second section */
 .conta2{
@@ -545,7 +544,9 @@ align-items: center;
 
 
 
+@media (max-width:321px) and (min-width:320px){
 
+}
 
 
 
@@ -620,13 +621,14 @@ flex-direction: column;
     height: 60vh;
 }
 .cyrcleInPizza{
-    bottom: 10vh;
-    height: 45vh;
+    bottom: 16vh;
+padding: 6%;
+width: 18%;
 }
 .origineMargha{
 width: 50%;
 left: 50%;
-bottom: 60vh;
+bottom: 65vh;
 }
 /* the second section */
 .conta2{
