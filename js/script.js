@@ -101,8 +101,9 @@ sideC.style.display = "block"
  document.querySelector('main').style.filter = "blur(8px)"; 
 
 
-});
-xSquare.addEventListener('click',(e)=>{
+});         
+
+theMain.addEventListener('click',(e)=>{
     e.preventDefault();
 
 sideC.style.display = "none"
