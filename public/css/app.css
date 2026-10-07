@@ -629,7 +629,7 @@ html{
 
 .thedivside{
     border-radius: 10px;
-    padding-left: 2%;
+    padding-left: 1%;
     display: flex;
     justify-content: center;
  align-items: center;
@@ -647,6 +647,12 @@ html{
     display: flex;
     justify-content: center;
     width: 90%;
+}
+.btnBuy{
+    width: 50%;
+    background-color: #ff4757;
+    color: white;
+    
 }
 
 

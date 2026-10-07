@@ -124,7 +124,8 @@ divajouter.classList.add('thedivside');
     
     totalDiv.innerHTML = `
     <span> Total :</span>
-    <span> ${total} MAD</span>`
+    <span> ${total} MAD</span>
+    <button class="btnBuy">Demande</button>`
     
     txtshldbehidde.style.display = "none"
 })
