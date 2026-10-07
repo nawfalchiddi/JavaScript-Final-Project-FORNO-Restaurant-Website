@@ -85,6 +85,7 @@ e.preventDefault();
 })
 
 addbtn.style.color = "green";
+addbtn.innerHtml = `<p><i class="bi bi-check2"></i> ajouter</p> `
 
 })
 
