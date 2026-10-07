@@ -631,10 +631,11 @@ html{
     display: flex;
  align-items: center;
   gap: 10px;
-   margin-bottom: 15px;
+   width: 50%;
     border-bottom: 1px solid #eee;
-     padding-bottom: 10px;
+    
 }
+
 
 
 

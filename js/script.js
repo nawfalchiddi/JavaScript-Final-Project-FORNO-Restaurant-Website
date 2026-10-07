@@ -94,10 +94,10 @@ let pizzaPrice = theParent.querySelector('.priceAjouter h2').childNodes[0].textC
 let pizzaimg = theParent.querySelector('.imageM').src
 
 let divajouter = document.createElement('div');
-// divajouter.classList('thedivside');
+divajouter.classList.add('thedivside');
 
  divajouter.innerHTML = `
-      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+      <div>
         <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
         <div style="flex-grow: 1;">
           <h4 style="margin: 0; font-size: 14px;">${pizzaName}</h4>
