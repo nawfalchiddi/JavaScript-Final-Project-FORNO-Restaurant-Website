@@ -628,12 +628,25 @@ html{
 }
 
 .thedivside{
+    border-radius: 10px;
+    padding-left: 2%;
     display: flex;
+    justify-content: center;
  align-items: center;
   gap: 10px;
-   width: 50%;
+   width: 20%;
     border-bottom: 1px solid #eee;
-    
+
+}
+.totaldivside{
+    margin-top: 3%;
+    font-weight: 600;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding-left: 2%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
 }
 
 
