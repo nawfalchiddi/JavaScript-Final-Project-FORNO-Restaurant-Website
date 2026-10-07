@@ -77,6 +77,7 @@ let total = 0
 let totalDiv = document.createElement('div');
 
 sideC.appendChild(totalDiv);
+
 addbtn.forEach((btn) => {
 btn.addEventListener('click',(e) =>{
 e.preventDefault();
@@ -98,6 +99,7 @@ let pizzaPriceText = theParent.querySelector('.priceAjouter h2').childNodes[0].t
 let pizzaPricenum = parseFloat(pizzaPriceText) || 0;
 let pizzaimg = theParent.querySelector('.imageM').src
 
+total += pizzaPricenum;
 let divajouter = document.createElement('div');
 divajouter.classList.add('thedivside');
 
