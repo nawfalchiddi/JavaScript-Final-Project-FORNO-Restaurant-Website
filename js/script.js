@@ -108,3 +108,11 @@ sideC.style.display = "none"
 
 
 })
+
+let aTagcards =document.querySelector('.smoothCards');
+
+aTagcards.addEventListener('click',(e) => {
+    e.preventDefault()
+
+    
+})
