@@ -1,0 +1,522 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(245, 241, 233);
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+header{
+    width: 100%;
+display: flex;
+justify-content: center;
+justify-content: space-around;
+
+}
+.HEADIV{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navPaier{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+width: 40%;
+justify-content: space-around;
+}
+ul{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-around;
+  color: black;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration:none ;
+    position: relative;
+}
+li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+
+    background-color: red;
+    transform: scaleX(0);
+
+    transform-origin: bottom left ;
+    transition: transform 0.3s ease-out;
+}
+li a:hover::after{
+    transform: scaleX(1);
+}
+.count{
+    display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+    border: none;
+    border-radius: 100px;
+   width: 19%;
+   height: 4vh;
+    background-color: rgb(216, 58, 38);
+}
+.btnPaier{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 27%;
+    height: 5vh;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+#burger-toggle {
+    display: none;
+}
+
+
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* the first section */
+.conta1{
+    width: 90%;
+    margin-top: 10vh;
+}
+.line{
+    width: 90%;
+    background-color: rgb(200, 198, 198);
+    height: 1px;
+}
+
+/* the second section */
+.conta2{
+ width: 90%; 
+ display: flex;
+ justify-content: center;
+ justify-content: space-around;
+}
+.locations{
+    color: rgb(239, 239, 239);
+    background-color:rgb(216, 58, 38) ;
+    padding-left: 5%;
+    padding-top: 3%;
+    margin-top: 4%;
+    border-radius: 10px;
+    width: 35%;
+}
+.numberLocation{
+    display: flex;
+    width: 50%;
+    gap: 17%;
+}
+
+form{
+    padding-bottom: 2vh;
+    padding-left: 2%;
+    gap: 1vh;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    width: 43%;
+    margin-top: 8vh;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+.successMessage{
+    padding-left: 2%;
+    background-color: lightgreen;
+       width: 43%;
+    margin-top: 8vh;
+    border: 5px solid rgb(30, 74, 59);
+}
+label{
+    font-weight: bold;
+}
+.nomEmail{
+    width: 100%;
+    display: flex;
+}
+.inptName{
+    width: 45%;
+}
+.inptemail{
+    width: 45%;
+}
+.nom{
+    /* transition: padding 0.3s ease; */
+    width: 90%;
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    outline: none;
+    padding-left: 2%;
+}
+option{
+    background-color: bisque;
+    border-radius: 10px;
+    color: rgb(196, 121, 23);
+}
+.nom:focus{
+    border: 1px solid rgb(232, 153, 153);
+}
+#locationslct{
+    outline: none;
+width: 87%;
+    height: 6vh;
+     border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+.boxsOfRadio{
+    gap: 1%;
+    display: flex;
+    align-items: center;
+}
+.boxRadio{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 4vh;
+    border-radius: 4px;
+border: 1px solid rgb(200, 197, 197);
+}
+.boxRadio:hover{
+    border: 1px solid rgb(216, 58, 38);
+    background-color: bisque;
+    cursor: pointer;
+}
+input[type="radio"]{
+    accent-color: rgb(216, 58, 38);
+}
+#textmeassage{
+border-radius: 10px;
+border: 1px solid lightgrey;
+outline: none;
+width: 87%;
+height: 15vh;
+padding-left: 2%;
+}
+.btnRedContact{
+    width: 100%;
+    height: 6vh;
+    border: 1px solid lightgray;
+    background-color:rgb(216, 58, 38) ;
+    color: white;
+    border-radius: 5px;
+}
+.divTxtBnt{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* the third container */
+.conta3{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 7vh;
+}
+.conta3txt{
+    width: 45%;
+}
+.textSymbole{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.containerOfTxtIcon{
+    width: 45%;
+}
+
+/* the footer */
+footer{
+    width: 100%;
+    margin-top: 6vh;
+}
+.firstDivOfFooter{
+margin-bottom: 5vh;
+    width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.btnFter{
+ height: 6vh;
+    width: 10%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnFter:hover{
+    cursor: pointer;
+      border: 1px solid rgb(255, 217, 0);
+    background-color: rgb(168, 171, 173);
+    color: rgb(255, 234, 0);
+     transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(255, 71, 87, 0.3);
+}
+.div-info-fter{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+}
+.linefooter{
+  width: 100%;
+    background-color: rgb(200, 198, 198);
+    height: 1px;
+}
+.bordeRedBelow{
+    cursor: pointer;
+       cursor: pointer;
+    width: 32%;
+    border-bottom: 2px solid rgb(216, 58, 38);
+    color: rgb(216, 58, 38);
+}
+.lastDiv{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+@media (max-width:426px) and (min-width:320px){
+ .navPaier {
+        width: auto; 
+        gap: 15px;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        background-color: white;
+        width: 200px;
+        padding: 15px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 100;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .btnPaier {
+        width: 130px; 
+    }
+
+    #burger-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    /* the second container */
+    .conta2{
+        justify-content: center;
+        align-items: center;
+       flex-direction: column;
+}
+.locations{
+    width: 90%;
+}
+form{
+    padding-left: 4%;
+    padding-top: 5vh;
+    width: 98%;
+}
+.boxRadio{
+    width: 30%;
+    font-size: small;
+}
+
+/* the third section */
+.conta3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+}
+.containerOfTxtIcon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.textSymbole{
+    width: 90%;
+}
+
+
+
+    /* the footer */
+    .firstDivOfFooter{
+    height: 30vh;
+flex-direction: column;
+}
+.btnFter{
+width: 30%;
+}
+.div-info-fter{
+flex-direction: column;
+height: 167vh;
+}
+.bordeRedBelow{
+    cursor: pointer;
+       cursor: pointer;
+    width: 34%;
+    border-bottom: 2px solid rgb(216, 58, 38);
+    color: rgb(216, 58, 38);
+}
+
+}
+
+
+@media (max-width:769px) and (min-width:426px){
+ .navPaier {
+        width: auto; 
+        gap: 15px;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        background-color: white;
+        width: 200px;
+        padding: 15px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 100;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .btnPaier {
+        width: 130px; 
+    }
+
+    #burger-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    /* the second container */
+    .conta2{
+        justify-content: center;
+        align-items: center;
+       flex-direction: column;
+}
+.locations{
+    width: 90%;
+}
+form{
+    padding-left: 4%;
+    padding-top: 5vh;
+    width: 90%;
+}
+.boxRadio{
+    width: 20%;
+    font-size: small;
+}
+
+/* the third section */
+.conta3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+}
+.containerOfTxtIcon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.textSymbole{
+    width: 90%;
+}
+
+
+/* the footer */
+
+.firstDivOfFooter{
+    height: 30vh;
+}
+.btnFter{
+width: 25%;
+}
+.div-info-fter{
+flex-direction: column;
+height: 145vh;
+}
+.bordeRedBelow{
+    cursor: pointer;
+       cursor: pointer;
+    width: 34%;
+    border-bottom: 2px solid rgb(216, 58, 38);
+    color: rgb(216, 58, 38);
+}
+
+}

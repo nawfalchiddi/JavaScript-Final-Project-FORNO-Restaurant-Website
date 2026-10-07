@@ -1,0 +1,914 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(245, 241, 233);
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+header{
+    width: 100%;
+display: flex;
+justify-content: center;
+justify-content: space-around;
+
+}
+.HEADIV{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navPaier{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+width: 40%;
+justify-content: space-around;
+}
+ul{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-around;
+  color: black;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration:none ;
+    position: relative;
+}
+li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+
+    background-color: red;
+    transform: scaleX(0);
+
+    transform-origin: bottom left ;
+    transition: transform 0.3s ease-out;
+}
+li a:hover::after{
+    transform: scaleX(1);
+}
+.count{
+    display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+    border: none;
+    border-radius: 100px;
+   width: 19%;
+   height: 4vh;
+    background-color: rgb(216, 58, 38);
+}
+.btnPaier{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 27%;
+    height: 5vh;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+#burger-toggle {
+    display: none;
+}
+
+
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* the first section */
+.conta1{
+width: 90%;
+margin-top: 4vh;
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-around;
+}
+.textConta1{
+    width: 30%;
+}
+.smline{
+    width: 10%;
+    height: 2px;
+    background-color: rgb(216, 58, 38);
+}
+.btnChois{
+    height: 5vh;
+    width: 30%;
+    text-align: center;
+    background-color: rgb(216, 58, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btnChois:hover{
+    cursor: pointer;
+    border: 1px solid red;
+    background-color: aliceblue;
+    color: red;
+     transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(255, 71, 87, 0.3);
+}
+.count2{
+    border-radius: 50px;
+    border: 1px solid lightgrey;
+  border-radius: 100px;
+   width: 19%;
+   height: 4vh;
+}
+.countext{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-around;
+}
+.imageHero{
+    width: 90%;
+    height: 75vh;
+}
+.imgdiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.cyrcleInPizza{
+    border-radius: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgb(216, 58, 38);
+    border: none;
+    width: 17%;
+    height: 14vh;
+    gap: 6%;
+     position: relative;
+    bottom: 20vh;
+    left: 7%;
+     /* box-shadow: inset 0 0 0 4px white; */
+    /* transform: rotate(-20deg); */
+}
+.origineMargha{
+    position: relative;
+    bottom: 80vh;
+    left: 65%;
+width: 32%;
+background-color: whitesmoke;
+color: rgb(148, 148, 148);
+border: none;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 4vh;
+}
+/* the second section */
+.conta2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    justify-content: space-around;
+}
+.line{
+    height: 1px;
+    width: 90%;
+    background-color: lightgray;
+}
+.numberTxt{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    height: 7vh;
+    margin-top: 4vh;
+}
+
+/* the third section */
+.conta3{
+width: 80%;
+}
+.cartesBeforeInput{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.boxSearchSelectInpt{
+    margin-top: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.boxInputSearch{
+    width: 80%;
+}
+.inputSearch{
+    width: 80%;
+    height: 6vh;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgb(189, 187, 187);
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.inputSearch:focus {
+    border-color: #ff4757; 
+}
+
+.inputSearch:focus {
+    border-color: #ff4757; 
+}
+.iconSearch{
+    transform: translateY(-50%);
+    pointer-events: none;  
+    position: relative;
+    left: 30px;
+}
+
+#pizaSelect{
+     height: 6vh;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgb(195, 193, 193);
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+/* the fourth container */
+.conta4{
+    margin-top: 10vh;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+align-items: center;
+justify-items: center;
+gap: 5%;
+width: 87%;
+}
+.cards{
+    width: 100%;
+ border-radius: 10px;
+outline: none;
+overflow: hidden;
+background-color: white;
+}
+.imageM{
+    background-color: rgb(231, 220, 201);
+object-fit: cover;
+width: 100%;
+overflow: hidden;
+}
+.loriginal{
+    position: relative;
+    bottom: 50vh;
+    left: 2%;
+background-color: white;
+width: 18%;
+height: 3vh;
+display: flex;
+justify-content: center;
+border-radius: 5px;
+}
+.loriginal1{
+    position: relative;
+    bottom: 50vh;
+    left: 2%;
+background-color: white;
+height: 3vh;
+width: 40%;
+display: flex;
+justify-content: center;
+border-radius: 5px;
+}
+
+.loriginal2{
+    position: relative;
+    bottom: 50vh;
+    left: 2%;
+background-color: white;
+width: 30%;
+height: 3vh;
+display: flex;
+justify-content: center;
+border-radius: 5px;
+}
+.priceAjouter{
+padding-bottom: 5%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+.cardTxt{
+    padding:2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 12vh;
+    padding-bottom: 4%;
+}
+.btnAjouter{
+    height: 5vh;
+    width: 30%;
+    text-align: center;
+    background-color: rgb(216, 58, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnAjouter:hover{
+    border: 1px solid red;
+    background-color: aliceblue;
+    color: red;
+     transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(255, 71, 87, 0.3);
+}
+
+/* the vivth container */
+.conta5{
+    margin-top: 6%;
+    height: 40vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(216, 58, 38);
+}
+
+.btnWhite{
+    height: 5vh;
+    width: 35%;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(216, 58, 38);
+  font-weight: bold;
+  margin-top: 5%;
+}
+.btnWhite:hover{
+    border: 1px solid red;
+    background-color: bisque;
+   cursor: pointer;
+     transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(255, 71, 87, 0.3);
+}
+
+
+/* the sixth container */
+.conta6{
+display: flex;
+align-items: center;
+width: 100%;
+justify-content: center;
+gap: 3%;
+margin-top: 10vh;
+height: 70vh;
+}
+.theboxBesideChefImg{
+    width: 35%;
+}
+.chefs{
+    border-radius: 10px;
+    width: 90%;
+    height: 70vh;
+}
+.numberTxtcnt6{
+margin-top: 3vh;
+   height: 10vh;
+    display: flex;
+    gap: 5%;
+}
+.borderRedBelow{
+    cursor: pointer;
+    width: 44%;
+    border-bottom: 2px solid rgb(216, 58, 38);
+    color: rgb(216, 58, 38);
+}
+.shefsimgTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.txtBelowchefs{
+    position: relative;
+    bottom: 7vh;
+    background-color: white;
+    color: rgb(89, 88, 88);
+    width: 60%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 5vh;
+}
+
+/* the seventh container */
+.conta7{
+    margin-top: 9vh;
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+width: 100%;
+background-color: rgb(37, 36, 31);
+color: white;
+}
+.conta7Title{
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+}
+.citiesCard{
+    padding-top: 3vh;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 100%;
+justify-items: center;
+}
+.city{
+width: 75%;
+}
+.borderWhiteBelow{
+ cursor: pointer;
+    width: 74%;
+border-bottom: 2px solid white;
+}
+
+/* the footer */
+footer{
+    width: 100%;
+    margin-top: 6vh;
+}
+.firstDivOfFooter{
+margin-bottom: 5vh;
+    width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.btnFter{
+ height: 6vh;
+    width: 10%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnFter:hover{
+    cursor: pointer;
+      border: 1px solid rgb(255, 217, 0);
+    background-color: rgb(168, 171, 173);
+    color: rgb(255, 234, 0);
+     transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(255, 71, 87, 0.3);
+}
+.div-info-fter{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+}
+.bordeRedBelow{
+    cursor: pointer;
+       cursor: pointer;
+    width: 34%;
+    border-bottom: 2px solid rgb(216, 58, 38);
+    color: rgb(216, 58, 38);
+}
+.lastDiv{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:426px) and (min-width:320px){
+    .navPaier {
+        width: auto; 
+        gap: 15px;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        background-color: white;
+        width: 200px;
+        padding: 15px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 100;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .btnPaier {
+        width: 130px; 
+    }
+
+    #burger-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    /* the first container */
+    .conta1{
+flex-direction: column;
+}
+.textConta1{
+    width: 100%;
+}
+
+.btnChois{
+    height: 6vh;
+}
+
+.count2{
+   width: 18%;
+}
+.countext{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+}
+.imageHero{
+    width: 100%;
+    height: 75vh;
+}
+.imgdiv{
+    width: 100%;
+    height: 60vh;
+}
+.cyrcleInPizza{
+    bottom: 10vh;
+    height: 45vh;
+}
+.origineMargha{
+width: 50%;
+left: 50%;
+bottom: 60vh;
+}
+/* the second section */
+.conta2{
+  flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.numberTxt{
+    width: 60%;
+}
+
+/* the third section */
+.conta3{
+width: 90%;
+}
+
+
+/* the fourth container */
+.conta4{
+   margin-top: 20vh;
+grid-template-columns: repeat(1,1fr);
+}
+.loriginal{
+ bottom: 55vh;
+}
+.loriginal1{
+    bottom: 55vh;
+width: 44%;
+}
+
+.loriginal2{
+    bottom: 55vh;
+}
+
+
+/* the vivth container */
+.conta5{
+    margin-top: 20vh;
+    flex-direction: column;
+    height: 80vh;
+   
+}
+.boxTxtWhiteBtn{
+    padding-left: 10%;
+}
+/* the sixth section */
+.conta6{
+    flex-direction: column;
+    margin-top: 50vh;
+    margin-bottom: 40vh;
+    
+}
+.theboxBesideChefImg{
+    width: 90%;
+}
+.chefs{
+   width: 90%;
+    height: 60vh;
+}
+
+.txtBelowchefs{
+  width: 70%;
+  font-size: x-small;
+}
+
+.borderRedBelow{
+    width: 60%;
+}
+
+/* the seventh container */
+
+.conta7Title{
+    gap: 3vh;
+flex-direction: column;
+}
+.citiesCard{
+grid-template-columns: repeat(1,1fr);
+gap: 4%;
+padding-bottom: 20vh;
+}
+.borderWhiteBelow{
+        width: 67%;
+}
+
+/* the footer */
+
+.firstDivOfFooter{
+    height: 30vh;
+flex-direction: column;
+}
+.btnFter{
+width: 30%;
+}
+.div-info-fter{
+flex-direction: column;
+height: 167vh;
+}
+.bordeRedBelow{
+    cursor: pointer;
+       cursor: pointer;
+    width: 34%;
+    border-bottom: 2px solid rgb(216, 58, 38);
+    color: rgb(216, 58, 38);
+}
+
+}
+
+@media (max-width:769px) and (min-width:426px){
+    .navPaier {
+        width: auto; 
+        gap: 15px;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        background-color: white;
+        width: 200px;
+        padding: 15px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 100;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .btnPaier {
+        width: 130px; 
+    }
+
+    #burger-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    /* the first container */
+    .conta1{
+flex-direction: column;
+}
+
+.textConta1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btnChois{
+    height: 6vh;
+}
+
+.count2{
+   width: 18%;
+}
+.priceAjouter{
+    margin-top: 12%;
+}
+.btnAjouter{
+    width: 36%;
+}
+.countext{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+}
+.imageHero{
+    width: 80%;
+    height: 75vh;
+}
+.imgdiv{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.numberTxt{
+    width: 60%;
+}
+
+/* the third section */
+.conta3{
+width: 90%;
+}
+
+/* the fourth contaienr */
+.loriginal{
+ bottom: 30vh;
+ width: 38%;
+}
+.loriginal1{
+    bottom: 30vh;
+width: 78%;
+}
+
+.loriginal2{
+    bottom: 30vh;
+    width: 60%;
+}
+/* the vivth container */
+.conta5{
+    margin-top: 10vh;
+    height: 70vh;
+}
+.boxTxtWhiteBtn{
+    padding-left: 1%;
+}
+/* the sixth container */
+
+.conta6{
+    flex-direction: column;
+    margin-top: 50vh;
+    margin-bottom: 40vh;
+    
+}
+.theboxBesideChefImg{
+    width: 90%;
+}
+.chefs{
+   width: 90%;
+    height: 60vh;
+}
+
+.txtBelowchefs{
+  width: 70%;
+  font-size: x-small;
+}
+
+.borderRedBelow{
+    width: 33%;
+}
+
+/* the seventh container */
+
+.conta7Title{
+    gap: 3vh;
+padding-bottom:5vh ;
+}
+.citiesCard{
+grid-template-columns: repeat(2,1fr);
+gap: 9%;
+padding-bottom: 10vh;
+}
+.borderWhiteBelow{
+        width: 79%;
+}
+
+/* the footer */
+
+.firstDivOfFooter{
+    height: 30vh;
+}
+.btnFter{
+width: 25%;
+}
+.div-info-fter{
+flex-direction: column;
+height: 145vh;
+}
+.bordeRedBelow{
+    cursor: pointer;
+       cursor: pointer;
+    width: 34%;
+    border-bottom: 2px solid rgb(216, 58, 38);
+    color: rgb(216, 58, 38);
+}
+
+}
+
+
+
+
+
+
