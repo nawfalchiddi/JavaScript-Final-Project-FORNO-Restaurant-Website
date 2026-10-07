@@ -73,6 +73,8 @@ e.preventDefault()
 let btnpayer = document.querySelector('.btnPaier');
 let addbtn = document.querySelectorAll('.btnAjouter');
 let txtshldbehidde = document.querySelector('.lastdivSide');
+let total = 0
+
 addbtn.forEach((btn) => {
 btn.addEventListener('click',(e) =>{
 e.preventDefault();
@@ -90,17 +92,18 @@ btn.innerHTML = `<p><i class="bi bi-check2"></i> ajouter</p> `
 let theParent = btn.closest('.cards');
 
 let pizzaName = theParent.querySelector('h2 strong').textContent;
-let pizzaPrice = theParent.querySelector('.priceAjouter h2').childNodes[0].textContent.trim()
+let pizzaPriceText = theParent.querySelector('.priceAjouter h2').childNodes[0].textContent.trim()
+let pizzaPricenum = parseFloat(pizzaPriceText) || 0;
 let pizzaimg = theParent.querySelector('.imageM').src
 
 let divajouter = document.createElement('div');
 divajouter.classList.add('thedivside');
 
-let total = 0
-for (let i = 0; i < theParent.length; i++) {
-    total += theParent[i].pizzaPrice
+// let total = 0
+// for (let i = 0; i < cardsPizza.length; i++) {
+//     total += Number(cardsPizza[i].pizzaPrice) 
     
-}
+// }
  divajouter.innerHTML = `
       <div>
         <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
