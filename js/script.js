@@ -83,15 +83,28 @@ e.preventDefault();
 })
 })
 
+
+
 let htMl = document.querySelector('html');
-let btnMyPayment = document.querySelector('.btnPaier');
+let sideC = document.querySelector('.sideleft');
+let xSquare = document.querySelector('.xbtn')
 const pizzaAddArray = [];
 
-btnMyPayment.addEventListener('click',(e) => {
+
+btnpayer.addEventListener('click',(e) => {
 e.preventDefault();
 
-let sidediv = document.createElement('div');
-sidediv.classList('sideLeft');
+sideC.style.display = "block"
+
+
 
 
 });
+xSquare.addEventListener('click',(e)=>{
+    e.preventDefault();
+
+sideC.style.display = "none"
+
+
+
+})
