@@ -76,16 +76,18 @@ let addbtn = document.querySelectorAll('.btnAjouter');
 addbtn.forEach((btn) => {
 btn.addEventListener('click',(e) =>{
 e.preventDefault();
-  let countAdd =  btnpayer.querySelector('span') 
+let countAdd =  btnpayer.querySelector('span') 
 
-  let countvarbl = Number(countAdd.textContent) || 0
+let countvarbl = Number(countAdd.textContent) || 0
 
-  countAdd.textContent = countvarbl + 1
+countAdd.textContent = countvarbl + 1
 
+
+btn.style.background = "green"
+btn.style.color = "white"
+btn.innerHTML = `<p><i class="bi bi-check2"></i> ajouter</p> `
 })
 
-addbtn.style.color = "green";
-addbtn.innerHtml = `<p><i class="bi bi-check2"></i> ajouter</p> `
 
 })
 
