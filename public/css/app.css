@@ -652,7 +652,8 @@ html{
     width: 50%;
     background-color: #ff4757;
     color: white;
-    
+    border-radius: 5px;
+    border: none;
 }
 
 

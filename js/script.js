@@ -126,6 +126,8 @@ divajouter.classList.add('thedivside');
     <span> Total :</span>
     <span> ${total} MAD</span>
     <button class="btnBuy">Demande</button>`
+    let buy = document.createElement('button');
+    buy.classList.add('btnBuy')
     
     txtshldbehidde.style.display = "none"
 })
