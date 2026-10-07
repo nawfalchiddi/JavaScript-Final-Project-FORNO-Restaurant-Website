@@ -357,15 +357,19 @@ outline: none;
 overflow: hidden;
 background-color: white;
 }
+.divimage2{
+    outline: none;
+overflow: hidden;
+}
 .imageM{
     background-color: rgb(231, 220, 201);
 object-fit: cover;
 width: 100%;
 overflow: hidden;
-transition: transform 0.4s ease-in-out;
+transition: transform 0.5s ease-in-out;
 }
-.cards:hover .i{
-    transform: scale(1.1);
+.cards:hover .imageM{
+    transform: scale(1.1) rotate(-5deg);
 }
 .loriginal{
     position: relative;
