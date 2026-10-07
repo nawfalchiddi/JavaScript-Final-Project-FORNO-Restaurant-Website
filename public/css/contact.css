@@ -130,7 +130,7 @@ color: white;
 .locations{
     color: rgb(239, 239, 239);
     background-color:rgb(216, 58, 38) ;
-    padding-left: 5%;
+    padding-left: 3%;
     padding-top: 3%;
     margin-top: 4%;
     border-radius: 10px;
@@ -138,8 +138,14 @@ color: white;
 }
 .numberLocation{
     display: flex;
-    width: 50%;
-    gap: 17%;
+    width: 90%;
+    padding-left: 1%;
+    gap: 10%;
+}
+.numberLocation:hover{
+    cursor: pointer;
+    background-color: rgb(241, 85, 85);
+    color: grey;
 }
 
 form{
