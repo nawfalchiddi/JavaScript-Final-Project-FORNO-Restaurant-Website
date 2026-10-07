@@ -194,3 +194,6 @@ btnChois2.addEventListener('click',(e) => {
     })
 
 })
+
+
+buy.addEventListener('click',)
