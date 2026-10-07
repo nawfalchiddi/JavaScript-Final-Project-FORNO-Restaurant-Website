@@ -86,6 +86,11 @@ countAdd.textContent = countvarbl + 1
 btn.style.background = "green"
 btn.style.color = "white"
 btn.innerHTML = `<p><i class="bi bi-check2"></i> ajouter</p> `
+
+let theParent = btn.closest('.cards');
+
+let pizzaName = theParent.querySelector('h2 strong').textContent;
+let pizzaPrice = theParent.querySelector('.priceAjouter h2').childNodes[0]
 })
 
 
