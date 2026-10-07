@@ -362,6 +362,10 @@ background-color: white;
 object-fit: cover;
 width: 100%;
 overflow: hidden;
+transition: transform 0.4s ease-in-out;
+}
+.cards:hover .i{
+    transform: scale(1.1);
 }
 .loriginal{
     position: relative;
