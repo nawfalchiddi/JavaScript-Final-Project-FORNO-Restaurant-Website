@@ -62,7 +62,7 @@ let btnchoi = document.querySelector('.btnChois');
 btnchoi.addEventListener('click',(e)=>{
 e.preventDefault()
   document.querySelector('main').style.filter = "blur(0px)"; 
-
+  sideC.style.display = "none"
     containerCards.scrollIntoView({
         behavior : "smooth",
         block : "start"
@@ -87,7 +87,7 @@ e.preventDefault();
 
 
 
-let htMl = document.querySelector('html');
+let theMain = document.querySelector('main');
 let sideC = document.querySelector('.sideleft');
 let xSquare = document.querySelector('.xbtn')
 const pizzaAddArray = [];
@@ -102,6 +102,15 @@ sideC.style.display = "block"
 
 
 });
+xSquare.addEventListener('click',(e)=>{
+    e.preventDefault();
+
+sideC.style.display = "none"
+
+  document.querySelector('main').style.filter = "blur(0px)"; 
+
+})
+
 xSquare.addEventListener('click',(e)=>{
     e.preventDefault();
 
