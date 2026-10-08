@@ -1,5 +1,5 @@
 let frm = document.querySelector('#theForm');
-let name = document.querySelector('#name');
+let nameL = document.querySelector('#name');
 let email = document.querySelector('#email');
 let error = document.querySelector('.wrong');
 let error1 = document.querySelector('.wrong1');
@@ -16,7 +16,7 @@ frm.addEventListener('submit',(e)=>{
     
 
     
-    if (name.value.trim() === "" || !isNaN(name.value.trim()) ) {
+    if (nameL.value.trim() === "" || !isNaN(nameL.value.trim()) ) {
         error.style.color = 'red';
         error.textContent = "please enter your name";
        
@@ -43,7 +43,7 @@ frm.addEventListener('submit',(e)=>{
         let thecard = document.createElement('div') 
         thecard.classList.add('successMessage')
         thecard.innerHTML = `<h1 style=" color: green; font-size: 400%; font-weight: bolder;">your registration was seccessful </h1>
-        <br> <p> your name : ${name.value}</p><br>
+        <br> <p> your name : ${nameL.value}</p><br>
         <p>-------------------------------------------------</p>
         <br> <p> your email : ${email.value}</p><br>
         <p>-------------------------------------------------</p><br>
@@ -58,13 +58,17 @@ frm.addEventListener('submit',(e)=>{
     }
 })
 
-// let locationcard = document.querySelectorAll('.numberLocation');
-// locationcard.forEach((contaLoc) => {
+let locationcard = document.querySelectorAll('.numberLocation');
+locationcard.forEach((trens) => {
     
-//     contaLoc.addEventListener('click',()=>{
+    trens.addEventListener('click',()=>{
         
-//         let pLocationName = document.querySelectorAll('.ploction');
+        let thelocationname = trens.querySelector('.ploction').childNodes[0].textContent.trim();
         
-         
-//         })
-//     })
+         locatSelct.value = thelocationname;
+        
+        if (error2) {
+            error2.textContent = "";
+        } 
+        })
+    })
