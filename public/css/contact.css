@@ -237,6 +237,7 @@ height: 15vh;
 padding-left: 2%;
 }
 .btnRedContact{
+    cursor: pointer;
     width: 100%;
     height: 6vh;
     border: 1px solid lightgray;

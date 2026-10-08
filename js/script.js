@@ -114,10 +114,13 @@ divajouter.classList.add('thedivside');
     <div>
     <img src="${pizzaimg}" alt="${pizzaName}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px;">
     <div style="flex-grow: 1;">
-    <h4 style="margin: 0; font-size: 14px;">${pizzaName}</h4>
-    <p style="margin: 0; color: red; font-weight: bold; font-size: 13px;">${pizzaPriceText} MAD</p>
+    <p style=" font-size: 10px;width: 50%;">Name : ${pizzaName}</p>
+    <p style=" color: red; font-weight: bold; font-size: 10px;"> Price : ${pizzaPriceText} MAD</p>
     </div>
     </div>
+    <div class="plusMinus">
+    <button class="minus">-</button><input class="inptPM" type="number"><button class="plus">+</button>
+</div>
     
     `;
     sideC.appendChild(buy)
@@ -196,4 +199,14 @@ btnChois2.addEventListener('click',(e) => {
 })
 
 
-buy.addEventListener('click',)
+buy.addEventListener('click', (e)=>{
+    e.preventDefault();
+    buy.style.background = "green"
+buy.style.color = "white"
+buy.style.height = "5vh";
+buy.style.width = "33%";
+buy.style.marginTop = "3%";
+buy.style.borderRadius = "10px";
+buy.style.placeSelf = "center";
+buy.innerHTML = `<p><i class="bi bi-check2"></i> Demonde</p> `
+})
