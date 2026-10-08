@@ -133,7 +133,8 @@ divajouter.classList.add('thedivside');
     let btnplus = divajouter.querySelector('.plus');
     let inptpm = divajouter.querySelector('.inptPM');
     
-    btnplus.addEventListener('click',()=>{
+    btnplus.addEventListener('click',(e)=>{
+        e.preventDefault()
         let amount =  parseFloat(inptpm.value)
         inptpm.value = amount + 1
         
@@ -144,7 +145,8 @@ divajouter.classList.add('thedivside');
         <span> ${total} MAD</span>
         ` 
     });
-    btnminus.addEventListener('click',()=>{
+    btnminus.addEventListener('click',(e)=>{
+        e.preventDefault();
         let amount =  parseFloat(inptpm.value)
             inptpm.value = amount - 1
 
@@ -167,12 +169,18 @@ divajouter.classList.add('thedivside');
       <span> Total :</span>
       <span> ${total} MAD</span>
       ` 
-      if (Number(countAdd.textContent) === 0 && txtshldbehidde) txtshldbehidde.style.display = "block";
+      if (Number(countAdd.textContent) === 0 && txtshldbehidde){
+           txtshldbehidde.style.display = "block";  
+      buy.style.display = "none"
+      } 
+     
     });
    
-    buy.innerHTML = `<div class="btnBuY"><button class="btnBuy">Demande</button></div>`
+   if (txtshldbehidde) {
+      txtshldbehidde.style.display = "none" 
+          buy.innerHTML = `<div class="btnBuY"><button class="btnBuy">Demande</button></div>`
+} 
     
-    txtshldbehidde.style.display = "none"
 })
 
 })
