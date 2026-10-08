@@ -680,7 +680,24 @@ html{
 .minus{
     width: 25px;
     height: 25px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius:3px ;
     
+}
+.plus{
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius:3px ;
+
+}
+.inptPM{
+    text-align: center;
+    width: 35px;
+    border-radius: 3px;
+    border: 1px solid gray;
 }
 
 

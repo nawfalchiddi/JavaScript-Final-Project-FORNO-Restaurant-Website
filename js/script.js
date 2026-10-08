@@ -119,14 +119,19 @@ divajouter.classList.add('thedivside');
     </div>
     </div>
     <div class="plusMinus">
-    <button class="minus">-</button><input class="inptPM" type="number"><button class="plus">+</button>
+    <button class="minus">-</button><input class="inptPM" value="1" type="number"><button class="plus">+</button>
 </div>
     
     `;
+
     sideC.appendChild(buy)
     sideC.insertBefore(totalDiv,buy)
     sideC.insertBefore(divajouter , totalDiv)
     // sideC.insertBefore(totalDiv);
+
+    let btnminus = divajouter.querySelector('.minus')
+    let btnplus = divajouter.querySelector('.plus')
+    let inptpm = divajouter.querySelector('.inptPM')
     
     totalDiv.innerHTML = `
     <span> Total :</span>
