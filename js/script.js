@@ -167,6 +167,7 @@ divajouter.classList.add('thedivside');
       <span> Total :</span>
       <span> ${total} MAD</span>
       ` 
+      if (Number(countAdd.textContent) === 0 && txtshldbehidde) txtshldbehidde.style.display = "block";
     });
    
     buy.innerHTML = `<div class="btnBuY"><button class="btnBuy">Demande</button></div>`
