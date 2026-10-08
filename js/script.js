@@ -128,6 +128,10 @@ divajouter.classList.add('thedivside');
     sideC.insertBefore(totalDiv,buy);
     sideC.insertBefore(divajouter , totalDiv);
     // sideC.insertBefore(totalDiv);
+     totalDiv.innerHTML = `
+        <span> Total :</span>
+        <span> ${total} MAD</span>
+        ` 
 
     let btnminus = divajouter.querySelector('.minus');
     let btnplus = divajouter.querySelector('.plus');

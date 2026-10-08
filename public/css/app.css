@@ -675,7 +675,6 @@ html{
 }
 .plusMinus{
     
-    background-color: #ff4757;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -699,7 +698,7 @@ html{
 }
 .inptPM{
     text-align: center;
-    width: 25%;
+    width: 20%;
     height: 4vh;
     border-radius: 3px;
     border: 1px solid gray;
