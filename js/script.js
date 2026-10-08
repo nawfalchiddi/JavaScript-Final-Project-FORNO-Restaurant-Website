@@ -124,19 +124,51 @@ divajouter.classList.add('thedivside');
     
     `;
 
-    sideC.appendChild(buy)
-    sideC.insertBefore(totalDiv,buy)
-    sideC.insertBefore(divajouter , totalDiv)
+    sideC.appendChild(buy);
+    sideC.insertBefore(totalDiv,buy);
+    sideC.insertBefore(divajouter , totalDiv);
     // sideC.insertBefore(totalDiv);
 
-    let btnminus = divajouter.querySelector('.minus')
-    let btnplus = divajouter.querySelector('.plus')
-    let inptpm = divajouter.querySelector('.inptPM')
+    let btnminus = divajouter.querySelector('.minus');
+    let btnplus = divajouter.querySelector('.plus');
+    let inptpm = divajouter.querySelector('.inptPM');
     
-    totalDiv.innerHTML = `
+    btnplus.addEventListener('click',()=>{
+        let amount =  parseFloat(inptpm.value)
+        inptpm.value = amount + 1
+        
+        total += pizzaPricenum
+        countAdd.textContent = Number(countAdd.textContent) + 1
+        totalDiv.innerHTML = `
+        <span> Total :</span>
+        <span> ${total} MAD</span>
+        ` 
+    });
+    btnminus.addEventListener('click',()=>{
+        let amount =  parseFloat(inptpm.value)
+            inptpm.value = amount - 1
+
+            total -= pizzaPricenum
+            countAdd.textContent = Number(countAdd.textContent) - 1
+            totalDiv.innerHTML = `
     <span> Total :</span>
     <span> ${total} MAD</span>
-    `
+    ` ;
+    if (amount > 1) {
+        inptpm.value = amount - 1
+    }else{
+        divajouter.remove();
+        btn.style.background = "red";
+        btn.style.color = "white";
+        btn.innerHTML = `Ajouter`;
+
+    }
+    totalDiv.innerHTML = `
+      <span> Total :</span>
+      <span> ${total} MAD</span>
+      ` 
+    });
+   
     buy.innerHTML = `<div class="btnBuY"><button class="btnBuy">Demande</button></div>`
     
     txtshldbehidde.style.display = "none"
