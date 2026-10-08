@@ -677,6 +677,11 @@ html{
     align-items: center;
     gap: 1%;
 }
+.minus{
+    width: 25px;
+    height: 25px;
+    
+}
 
 
 
