@@ -123,6 +123,8 @@ divajouter.classList.add('thedivside');
 </div>
     
     `;
+ totalDiv.style.display = "flex";
+        buy.style.display = "block";
 
     sideC.appendChild(buy);
     sideC.insertBefore(totalDiv,buy);
@@ -164,8 +166,8 @@ divajouter.classList.add('thedivside');
         inptpm.value = amount - 1
     }else{
         divajouter.remove();
-        btn.style.background = "red";
-        btn.style.color = "white";
+        btn.style.background = "";
+        btn.style.color = "";
         btn.innerHTML = `Ajouter`;
 
     }
@@ -173,9 +175,15 @@ divajouter.classList.add('thedivside');
       <span> Total :</span>
       <span> ${total} MAD</span>
       ` 
-      if (Number(countAdd.textContent) === 0 && txtshldbehidde){
-           txtshldbehidde.style.display = "block";  
-      buy.style.display = "none"
+      if (Number(countAdd.textContent) === 0 ){
+        if(txtshldbehidde) txtshldbehidde.style.display = "block";  
+         txtshldbehidde.style.width = "100%";
+         txtshldbehidde.style.display = "flex";
+             txtshldbehidde.style.textAlign = "center";
+             txtshldbehidde.style.gap = "5%";
+          
+           buy.style.display = "none";
+           totalDiv.style.display = "none";
       } 
      
     });
@@ -187,7 +195,7 @@ divajouter.classList.add('thedivside');
     
 })
 
-})
+});
 
 
 
