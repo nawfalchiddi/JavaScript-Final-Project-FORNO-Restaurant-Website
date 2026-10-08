@@ -80,9 +80,20 @@ totalDiv.classList.add('totaldivside')
 let buy = document.createElement('button');
 buy.classList.add('btnBuY');
 
+
+let lastfrm = document.querySelector('.thelastForm');
+let inptLastnom = document.querySelector('#firstname');
+let inptlastLocation = document.querySelector('#locationFirst');
+let inputNumber = document.querySelector('.numberFirst');
+
+if (theForm) {
+    theForm.style.display = "none";
+    btnSuccess.textContent = "Confirmer la commande"; 
+}
 addbtn.forEach((btn) => {
     btn.addEventListener('click',(e) =>{
 e.preventDefault();
+lastfrm.style.display = "none"
 let countAdd =  btnpayer.querySelector('span') 
 
 let countvarbl = Number(countAdd.textContent) || 0
@@ -141,6 +152,7 @@ divajouter.classList.add('thedivside');
     
     btnplus.addEventListener('click',(e)=>{
         e.preventDefault()
+
         let amount =  parseFloat(inptpm.value)
         inptpm.value = amount + 1
         
@@ -190,13 +202,32 @@ divajouter.classList.add('thedivside');
    
    if (txtshldbehidde) {
       txtshldbehidde.style.display = "none" 
-          buy.innerHTML = `<div class="btnBuY"><button class="btnBuy">Demande</button></div>`
+      buy.innerHTML = `<div class="btnBuY"><button class="btnBuy">Demande</button></div>`
 } 
     
 })
 
 });
 
+buy.addEventListener('click',(e)=>{
+    e.preventDefault();
+
+        document.querySelectorAll('.thedivside').forEach(pizza => pizza.style.display = "none");
+   
+    
+    divajouter.style.display = "none";
+    buy.style.display = "none";
+    totalDiv.style.display = "none";
+    txtshldbehidde.style.display = "none" 
+  
+    if (lastfrm) lastfrm.style.display = "block";
+});
+  
+
+    
+
+
+})
 
 
 let theMain = document.querySelector('main');
